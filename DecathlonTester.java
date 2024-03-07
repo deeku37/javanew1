@@ -15,7 +15,8 @@ public static void main(String sportProducts[]){
 	Decathlon.addProducts("Swim Suits");
 	Decathlon.addProducts("Trekking Shoes");
 	
-	
+	Decathlon.getProducts();
+	boolean isUpdated= Decathlon.updateProducts("Trekking Bag" , "Trekking Shoes");
 	Decathlon.getProducts();
 }
 }

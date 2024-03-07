@@ -27,4 +27,21 @@ public static void getItems(){
 		
 	}
 }
+ public static boolean updateItems(String newItems, String oldItems){
+		    boolean isUpdated = false;
+			System.out.println("Before updating the PetShop Item"); 
+			 for(int index =0; index<items.length; index++){
+				 if(items[index] == oldItems){
+					  //items[0] = "Royal Kennin"
+					  items[index] = newItems;
+                      isUpdated = true ;
+               System.out.println("PetShopItem is added sucessfully");
+			   
+				 }
+			 }
+			 System.out.println("After updating the PetShop Items");
+			        return isUpdated;
+	 }
+
 }
+

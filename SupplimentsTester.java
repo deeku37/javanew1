@@ -13,8 +13,8 @@ public static void main(String Products[]){
 	Suppliments.addProducts("probotics gut");
 	Suppliments.addProducts(" melatonin");
 	Suppliments.addProducts("healthy-u");
-	
-	
+	Suppliments.getProducts();
+	boolean isSupplimentsAdded = Suppliments.updateProducts("Max Protien" , "360 gut");
 	Suppliments.getProducts();
 }
 }

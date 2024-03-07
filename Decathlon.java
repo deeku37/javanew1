@@ -27,4 +27,20 @@ public static void getProducts(){
 		
 	}
 }
+  public static boolean updateProducts(String newProducts , String oldProducts){
+	  boolean isUpdated = false ;
+	  System.out.println("Before updating the product");
+	  for (int index = 0 ; index<products.length; index++){
+		  if (products[index] == oldProducts){
+			  //products [0] = "Trekking Bag"
+			  products[index] = newProducts;
+			  isUpdated = true ;
+			  System.out.println(" Poduct value is added sucessfully");
+			  
+		  }
+	  }
+	  System.out.println("After updating the product");
+	  return isUpdated;
+  }
+  
 }

@@ -26,4 +26,19 @@ public static void getProducts(){
 		
 	}
 }
+ public static boolean updateProducts(String newProducts, String oldProducts){
+		    boolean isUpdated = false;
+			System.out.println("Before updating the Suppliments"); 
+			 for(int index =0; index<products.length; index++){
+				 if(products[index] == oldProducts){
+					  //products[0] = "Max Protien"
+					  products[index] = newProducts;
+                      isUpdated = true ;
+               System.out.println("Suppliments is added sucessfully");
+			   
+				 }
+			 }
+			 System.out.println("After updating the Suppliments");
+			        return isUpdated;
+	 }
 }

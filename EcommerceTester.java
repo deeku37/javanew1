@@ -13,8 +13,8 @@ public static void main(String sportProducts[]){
 	Ecommerce.addProducts("Shoes");
 	Ecommerce.addProducts("Ethnic wear");
 	Ecommerce.addProducts("Winter ware");
-	
-	
+		Ecommerce.getProducts();
+	boolean isProductsAdded = Ecommerce.updateProducts("Cluthes" , "Sd Card");
 	Ecommerce.getProducts();
 }
 }

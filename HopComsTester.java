@@ -15,8 +15,8 @@ public static void main(String fruits[]){
 	HopComs.addFruits("Jackfruit");
 	HopComs.addFruits("Dargon Fruit");
 	HopComs.addFruits("Chikku");
-	
-	
+	HopComs.getFruits();
+boolean isFruitsAdded = HopComs.updateFruits("Lechii" , "Jackfruit");
 	HopComs.getFruits();
 }
 }
