@@ -15,6 +15,8 @@ public static void main(String Products[]){
 	Suppliments.addProducts("healthy-u");
 	Suppliments.getProducts();
 	boolean isSupplimentsAdded = Suppliments.updateProducts("Max Protien" , "360 gut");
+    Suppliments.getProducts();
+	Suppliments.deleteProducts("Riboflavin");
 	Suppliments.getProducts();
 }
 }

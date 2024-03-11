@@ -10,7 +10,7 @@ class AutoMobileShopTester{
    AutoMobileShop.addAccessories("baggage");
    AutoMobileShop.addAccessories("eCall");
    AutoMobileShop.addAccessories("handlebar");
-   AutoMobileShop.addAccessories("seatr cover");
+   AutoMobileShop.addAccessories("seat cover");
    AutoMobileShop.addAccessories("footpegs");
    AutoMobileShop.addAccessories("radiator grill");
    AutoMobileShop.addAccessories("seats");
@@ -21,5 +21,8 @@ class AutoMobileShopTester{
   AutoMobileShop.getAccessories();
   AutoMobileShop.updateAccessories("mirror" , "seats");
 	AutoMobileShop.getAccessories();
+	AutoMobileShop.deleteAccessories("seat cover");
+	AutoMobileShop.getAccessories();
+	
 }
 }

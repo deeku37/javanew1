@@ -18,5 +18,8 @@ public static void main(String fruits[]){
 	HopComs.getFruits();
 boolean isFruitsAdded = HopComs.updateFruits("Lechii" , "Jackfruit");
 	HopComs.getFruits();
+	HopComs.deleteFruits("Mango");
+	HopComs.getFruits();
+	
 }
 }

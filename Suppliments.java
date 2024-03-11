@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Suppliments{
 
 		static String address = "hassan";
@@ -41,4 +42,19 @@ public static void getProducts(){
 			 System.out.println("After updating the Suppliments");
 			        return isUpdated;
 	 }
+	  public static void deleteProducts(String product){
+// looping the products from array(product)
+    int newIndex , oldIndex;
+	System.out.println("Products Riboflavin has to be deleted");
+     for (newIndex=0 ,oldIndex=0; oldIndex< products.length ; oldIndex++){
+		 if(products[oldIndex] != product){
+			 products[newIndex++] = products[oldIndex];
+          
+		 }
+	 }
+	 products = Arrays.copyOf(products , newIndex );
+	 System.out.println("Products Riboflavin is deleted sucessfully");
+			 return ;
+  }
+  
 }

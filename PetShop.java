@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class PetShop{
 
 		 static String ownerName = "Ravi";
@@ -42,6 +43,21 @@ public static void getItems(){
 			 System.out.println("After updating the PetShop Items");
 			        return isUpdated;
 	 }
-
+     public static void deleteItems(String item){
+// looping the item from array(item)
+    int newIndex , oldIndex;
+	System.out.println("PetShopItem  Cages has to be deleted");
+     for (newIndex=0 ,oldIndex=0; oldIndex< items.length ; oldIndex++){
+		 if(items[oldIndex] != item){
+			 items[newIndex++] = items[oldIndex];
+          
+		 }
+	 }
+	 items = Arrays.copyOf(items , newIndex );
+	 System.out.println("PetShopItem  Cages is deleted sucessfully");
+			 return ;
+  }
+  
+  
 }
 

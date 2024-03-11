@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Decathlon{
 
 		 static String ownerName = "Abhilash";
@@ -42,5 +43,19 @@ public static void getProducts(){
 	  System.out.println("After updating the product");
 	  return isUpdated;
   }
-  
+ 
+	    public static void deleteProducts(String product){
+// looping the product from array(product)
+    int newIndex , oldIndex;
+	System.out.println("Product football  has to be deleted");
+     for (newIndex=0 ,oldIndex=0; oldIndex< products.length ; oldIndex++){
+		 if(products[oldIndex] != product){
+			 products[newIndex++] = products[oldIndex];
+          
+		 }
+	 }
+	 products = Arrays.copyOf(products, newIndex );
+	 System.out.println("Product football is deleted sucessfully");
+			 return ;
+  } 
 }

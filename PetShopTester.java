@@ -18,5 +18,8 @@ public static void main(String sportProducts[]){
 	PetShop.getItems();
 	boolean isPetShopAdded = PetShop.updateItems("Royal Kennin" , "Pedegree");
 	PetShop.getItems();
+	PetShop.deleteItems("Cages");
+	PetShop.getItems();
+	
 }
 }

@@ -15,8 +15,11 @@ class StationariesTester{
    Stationaries.addStationaries("Sketch Pens");
    Stationaries.addStationaries("Marker");
    
-   
-  
+   Stationaries.getStationaries();
+  boolean isStationariesAdded= Stationaries.updateStationaries("Parker Pen" , "Pen");
  Stationaries.getStationaries();
+   Stationaries.deleteStationaries("Scale");
+   Stationaries.getStationaries();
+
 }
 }

@@ -16,5 +16,7 @@ public static void main(String sportProducts[]){
 		Ecommerce.getProducts();
 	boolean isProductsAdded = Ecommerce.updateProducts("Cluthes" , "Sd Card");
 	Ecommerce.getProducts();
+	Ecommerce.deleteProducts("Grooming Kit");
+	Ecommerce.getProducts();
 }
 }

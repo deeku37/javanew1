@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Ecommerce{
 
 		 static String appName = "Myntra";
@@ -41,4 +42,19 @@ public static boolean updateProducts(String newProducts, String oldProducts){
 			 System.out.println("After updating the Products");
 			        return isUpdated;
 	 }
-}
+	    public static void deleteProducts(String product){
+// looping the product from array(product)
+    int newIndex , oldIndex;
+	System.out.println("Products Grooming Kit has to be deleted");
+     for (newIndex=0 ,oldIndex=0; oldIndex< products.length ; oldIndex++){
+		 if(products[oldIndex] != product){
+			 products[newIndex++] = products[oldIndex];
+          
+		 }
+	 }
+	 products = Arrays.copyOf(products, newIndex );
+	 System.out.println("Products Grooming Kit is deleted sucessfully");
+			 return ;
+  }
+  }
+

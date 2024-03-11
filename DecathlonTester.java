@@ -18,5 +18,7 @@ public static void main(String sportProducts[]){
 	Decathlon.getProducts();
 	boolean isUpdated= Decathlon.updateProducts("Trekking Bag" , "Trekking Shoes");
 	Decathlon.getProducts();
+	Decathlon.deleteProducts("football");
+	Decathlon.getProducts();
 }
 }

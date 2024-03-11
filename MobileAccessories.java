@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class MobileAccessories{
    // public static void main([])
 	static String name = "SmartPhone";
@@ -32,7 +33,37 @@ class MobileAccessories{
 			   System.out.println(accessories [index]);
 		   }
 	   }
-
-
+     public static boolean updateAccessories(String newAccessories, String oldAccessories){
+		    boolean isUpdated = false;
+			System.out.println("Before updating the MobileAccessories"); 
+			 for(int index =0; index<accessories.length; index++){
+				 if(accessories[index] == oldAccessories){
+					  //accessories[0] = "Memory Card"
+					  accessories [index] = newAccessories;
+                      isUpdated = true ;
+               System.out.println("MobileAccessories is added sucessfully");
+			   
+				 }
+			 }
+			 System.out.println("After updating the MobileAccessories");
+			        return isUpdated;
+	 }
+    public static void deleteAccessories(String accessorie){
+// looping the stationaries from array(stationaries)
+    int newIndex , oldIndex;
+	System.out.println("Acessories Lcds-Display has to be deleted");
+     for (newIndex=0 ,oldIndex=0; oldIndex< accessories.length ; oldIndex++){
+		 if(accessories[oldIndex] != accessorie){
+			 accessories[newIndex++] = accessories[oldIndex];
+          
+		 }
+	 }
+	 accessories = Arrays.copyOf(accessories , newIndex );
+	 System.out.println("Accessories Lcds-Display is deleted sucessfully");
+			 return ;
+  }
+  
+  
 }
+
 

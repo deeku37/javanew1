@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Stationaries{
   static String name = "More";
   static String ownerName = "Latha";
@@ -33,5 +34,38 @@ class Stationaries{
 	  System.out.println(stationaries [index]);
 	  
   }
+  } 
+  public static boolean updateStationaries(String newStationaries , String oldStationaries){
+	  boolean isUpdated = false ;
+	  System.out.println("Before updating of stationaries");
+	  for (int index = 0 ; index<stationaries.length; index++){
+		  //if
+		  if(stationaries[index] == oldStationaries){
+			  //stationaries[0] = "Prker Pen"
+			  stationaries[index] = newStationaries;
+			  isUpdated = true;
+			  System.out.println("Stationaries is added sucessfully");
+			  
+		  }
+	  }
+	  System.out.println("After updating of stationaries");
+	       return isUpdated;
   }
+    public static void deleteStationaries(String stationarie){
+// looping the stationaries from array(stationaries)
+    int newIndex , oldIndex;
+	System.out.println("Stationaries Scale has to be deleted");
+     for (newIndex=0 ,oldIndex=0; oldIndex< stationaries.length ; oldIndex++){
+		 if(stationaries[oldIndex] != stationarie){
+			 stationaries[newIndex++] = stationaries[oldIndex];
+          
+		 }
+	 }
+	 stationaries = Arrays.copyOf(stationaries , newIndex );
+	 System.out.println("Stationaries scale is deleted sucessfully");
+			 return ;
+  }
+  
+  
+  
 }

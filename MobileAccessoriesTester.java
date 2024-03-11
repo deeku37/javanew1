@@ -15,8 +15,10 @@ class MobileAccessoriesTester{
    MobileAccessories.addAccessories("Phone Griper/Holder");
    MobileAccessories.addAccessories("Wire Charging Stand");
    
-   
-  
+   MobileAccessories.getAccessories();
+  boolean isAccessoriesAdded = MobileAccessories.updateAccessories("Memory Card","Arm Band");
+  MobileAccessories.getAccessories();
+  MobileAccessories.deleteAccessories("Lcds-Display");
   MobileAccessories.getAccessories();
 }
 }

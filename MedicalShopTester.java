@@ -17,5 +17,7 @@ public static void main(String sportProducts[]){
 	MedicalShop.getProducts();
 	boolean isProductssAdded = MedicalShop.updateProducts("Hand Wash" , "Hearing aids");
 	MedicalShop.getProducts();
+	MedicalShop.deleteProducts("Medical Instruments");
+	MedicalShop.getProducts();
 }
 }
